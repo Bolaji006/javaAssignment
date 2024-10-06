@@ -1,0 +1,75 @@
+1.
+let email = prompt("please input your email address").trim()
+let emailConfirm = email.endsWith("@gmail.com") || email.endsWith("@yahoo.com") || email.endsWith("@icloud.com")
+if(emailConfirm){
+    console.log("Email is valid")
+}else{
+    console.log("Invalid email address")
+ }
+
+2.
+let pass = prompt("please input your password").trim()
+let lowerCase = pass.charAt(0).toLowerCase() === pass.charAt(0)
+let upperCase = pass.charAt(pass.length - 1).toUpperCase() === pass.charAt(pass.length - 1)
+let password = lowerCase && upperCase && pass.includes(0)
+if(password){
+    console.log("Strong password")
+}else{
+    console.log("Weak password")
+}
+3.
+ let url = prompt("Please input your URL").trim().toLowerCase();
+        if (url.startsWith("https://")) {
+             console.log("Valid URL");
+    } else if (url.startsWith("http://")) {
+         console.log("Incomplete URL");
+        } else {
+            console.log("Invalid URL protocol");
+        }
+        
+        
+
+5.
+let username = prompt("Please input your username").trim().toLowerCase(); 
+
+if (username.length >= 5 && username.length <= 15) {
+    console.log("Valid username length");
+} else {
+    console.log("Invalid username length");
+}
+
+6.
+let firstname = prompt("Please input your firstname").trim();
+if (firstname.length > 0) { 
+     formattedName = firstname.charAt(0).toUpperCase().concat(firstname.slice(1).toLowerCase()) 
+    console.log(formattedName); 
+} else {
+    console.log("Please input a valid firstname."); 
+}
+
+10.
+7.
+let gradeStudent = prompt("please input your score")
+gradeStudent = Number(gradeStudent);
+    if(gradeStudent >= 75 && gradeStudent <= 100) {
+        console.log("Grade A");
+        }else if(gradeStudent >= 60 && gradeStudent < 75) {
+            console.log("Grade B")
+        }else if (gradeStudent >= 50 && gradeStudent < 60){
+            console.log("Grade C")
+             }else if (gradeStudent < 50) {
+                  console.log("Retake exam");
+        } else{
+            console.log("Retake exam")
+        }
+
+
+
+
+
+
+
+
+
+
+
